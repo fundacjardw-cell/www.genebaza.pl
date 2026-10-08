@@ -307,3 +307,152 @@ button:focus-visible {
     outline: 3px solid var(--accent, #d97706);
     outline-offset: 2px;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.support-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s ease;
+}
+
+.support-header {
+    margin-bottom: 28px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 20px;
+}
+
+.support-header h1,
+.support-header h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.625rem; 
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.support-header p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.support-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-field label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem; 
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.copy-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.copy-group input {
+    flex: 1;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.95rem;
+    color: #0f172a;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 12px 16px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.copy-group input.highlight-input {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-color: #94a3b8;
+}
+
+.copy-group input:focus-visible {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.copy-group button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #1e3a8a; 
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.copy-group button:hover {
+    background-color: #1d4ed8;
+}
+
+.copy-group button:active {
+    transform: scale(0.98);
+}
+
+.copy-group button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+.copy-group button.copied {
+    background-color: #15803d; 
+}
+
+@media (max-width: 640px) {
+    .support-card {
+        padding: 20px 16px;
+    }
+
+    .support-header h1,
+    .support-header h2 {
+        font-size: 1.375rem;
+    }
+
+    .copy-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .copy-group button {
+        width: 100%;
+        padding: 12px;
+    }
+}

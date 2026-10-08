@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genebaza.pl – Katalog Źródeł Genealogicznych i Historycznych</title>
+    <title>Wesprzyj rozwój projektu - GeneBaza.pl</title>
+    <meta name="description" content="Pomóż nam rozwijać katalog źródeł genealogicznych GeneBaza.pl. Dowiedz się, jak możesz wesprzeć utrzymanie serwerów i digitalizację dokumentów.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://genebaza.pl/wsparcie">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="description" content="Odkryj historię swojej rodziny z GeneBaza.pl. Przeszukuj miliony indeksów ksiąg metrykalnych, akt urodzeń, małżeństw i zgonów z całej Polski. Znajdź przodków i poznaj historę swojego regionu online.">
-    <meta name="keywords" content="genebaza, genealogia, szukanie przodków, indeksy metrykalne, akty stanu cywilnego, ród, bazy, kartoteki, żołnierze, stare mapy, armia, wojna światowa, księgi parafialne, akta stanu cywilnego, historia rodziny, historia, drzewo genealogiczne">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://genebaza.pl/">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Wesprzyj rozwój projektu - GeneBaza.pl",
+      "description": "Strona wsparcia finansowego i rozwoju serwisu GeneBaza.pl",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Fundacja Razem dla Wolności",
+        "url": "https://genebaza.pl"
+      }
+    }
+    </script>
+
 </head>
 <body>
 
@@ -26,148 +42,75 @@
         
         <aside class="sidebar">
             <h2 class="sidebar-title">Kategorie źródeł</h2>
-            <ul class="nav-list">
-                <li><a href="index.html">Strona Główna</a></li>
-                <li><a href="archiwa-i-ksiegi.html">Archiwa i Księgi Metrykalne</a></li>
-                <li><a href="kartoteki-i-spisy.html">Kartoteki i Spisy Ludności</a></li>
-                <li><a href="i-wojna-swiatowa.html">I Wojna Światowa</a></li>
-                <li><a href="ii-wojna-swiatowa.html">II Wojna Światowa</a></li>
-                <li><a href="armia-rosyjska.html">Armia Rosyjska</a></li>
-                <li><a href="armia-niemiecka.html">Armia Niemiecka</a></li>
-                <li><a href="armia-austro-wegierska.html">Armia Austro-Węgierska</a></li>
-                <li><a href="stany-zjednoczone.html">Stany Zjednoczone / Emigracja</a></li>
-                <li><a href="stare-mapy.html">Stare Mapy i Kartografia</a></li>
-                <li><a href="historia-lokalna.html">Historia Lokalna i Regionalna</a></li>
-                <li><a href="wsparcie.html" class="active">Wsparcie projektu</a></li>
-            </ul>
+            <nav aria-label="Kategorie źródeł">
+                <ul class="nav-list">
+                    <li><a href="/">Strona Główna</a></li>
+                    <li><a href="/archiwa-i-ksiegi">Archiwa i Księgi Metrykalne</a></li>
+                    <li><a href="/kartoteki-i-spisy">Kartoteki i Spisy Ludności</a></li>
+                    <li><a href="/i-wojna-swiatowa">I Wojna Światowa</a></li>
+                    <li><a href="/ii-wojna-swiatowa">II Wojna Światowa</a></li>
+                    <li><a href="/armia-rosyjska">Armia Rosyjska</a></li>
+                    <li><a href="/armia-niemiecka">Armia Niemiecka</a></li>
+                    <li><a href="/armia-austro-wegierska">Armia Austro-Węgierska</a></li>
+                    <li><a href="/stany-zjednoczone">Stany Zjednoczone / Emigracja</a></li>
+                    <li><a href="/stare-mapy">Stare Mapy i Kartografia</a></li>
+                    <li><a href="/historia-lokalna">Historia Lokalna i Regionalna</a></li>
+                    <li><a href="/wsparcie" class="active" aria-current="page">Wsparcie projektu</a></li>
+                </ul>
+            </nav>
         </aside>
 
-<div class="support-box-container">
-  <div class="support-card">
-    <div class="support-header">
-      <h2>Wesprzyj rozwój projektu</h2>
-      <p>Dzięki Twojemu wsparciu możemy opłacić serwery, rozbudowywać bazę danych oraz dodawać nowe funkcjonalności.</p>
+        <main class="content">
+            <section class="support-card" aria-labelledby="support-heading">
+                <div class="support-header">
+                    <h1 id="support-heading">Wesprzyj rozwój projektu</h1>
+                    <p>Dzięki Twojemu wsparciu możemy opłacić serwery, rozbudowywać bazę danych oraz dodawać nowe funkcjonalności.</p>
+                </div>
+
+                <div class="support-details">
+
+                    <div class="support-field">
+                        <label for="acc-name">Odbiorca przelewu</label>
+                        <div class="copy-group">
+                            <input type="text" id="acc-name" value="Fundacja Razem dla Wolności" readonly>
+                            <button type="button" 
+                                    aria-label="Kopiuj nazwę odbiorcy przelewu" 
+                                    onclick="copyToClipboard('acc-name', this)">
+                                Kopiuj
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="support-field">
+                        <label for="acc-number">Numer konta bankowego (PLN)</label>
+                        <div class="copy-group">
+                            <input type="text" id="acc-number" value="41 1160 2202 0000 0006 6803 7126" readonly class="highlight-input">
+                            <button type="button" 
+                                    aria-label="Kopiuj numer konta bankowego" 
+                                    onclick="copyToClipboard('acc-number', this)">
+                                Kopiuj
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="support-field">
+                        <label for="acc-title">Tytuł przelewu</label>
+                        <div class="copy-group">
+                            <input type="text" id="acc-title" value="Darowizna na rozwój serwisu GeneBaza" readonly>
+                            <button type="button" 
+                                    aria-label="Kopiuj tytuł przelewu" 
+                                    onclick="copyToClipboard('acc-title', this)">
+                                Kopiuj
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="toast-announcer" class="sr-only" role="status" aria-live="polite"></div>
+            </section>
+        </main>
+
     </div>
-
-    <div class="support-details">
-      <div class="support-field">
-        <label for="acc-name">Odbiorca przelewu</label>
-        <div class="copy-group">
-          <input type="text" id="acc-name" value="Fundacja Razem dla Wolności" readonly>
-          <button type="button" onclick="copyToClipboard('acc-name', this)">Kopiuj</button>
-        </div>
-      </div>
-
-      <div class="support-field">
-        <label for="acc-number">Numer konta bankowego (PLN)</label>
-        <div class="copy-group">
-          <input type="text" id="acc-number" value="41 1160 2202 0000 0006 6803 7126" readonly class="highlight-input">
-          <button type="button" onclick="copyToClipboard('acc-number', this)">Kopiuj</button>
-        </div>
-      </div>
-
-      <div class="support-field">
-        <label for="acc-title">Tytuł przelewu</label>
-        <div class="copy-group">
-          <input type="text" id="acc-title" value="Darowizna na rozwój serwisu GeneBaza" readonly>
-          <button type="button" onclick="copyToClipboard('acc-title', this)">Kopiuj</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-.support-box-container {
-  max-width: 600px;
-  margin: 20px auto;
-  font-family: system-ui, -apple-system, sans-serif;
-}
-.support-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 28px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-.support-header h2 {
-  margin: 0 0 8px 0;
-  color: #1e293b;
-  font-size: 1.5rem;
-}
-.support-header p {
-  margin: 0 0 24px 0;
-  color: #64748b;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-.support-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.support-field label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #475569;
-  margin-bottom: 6px;
-}
-.copy-group {
-  display: flex;
-  gap: 8px;
-}
-.copy-group input {
-  flex: 1;
-  padding: 10px 14px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  background-color: #f8fafc;
-  color: #0f172a;
-  font-size: 0.95rem;
-  font-family: inherit;
-}
-.copy-group input.highlight-input {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  border-color: #94a3b8;
-}
-.copy-group button {
-  padding: 10px 18px;
-  background-color: #2563eb;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-}
-.copy-group button:hover {
-  background-color: #1d4ed8;
-}
-.copy-group button.copied {
-  background-color: #16a34a;
-}
-</style>
-
-<script>
-function copyToClipboard(elementId, btn) {
-  const input = document.getElementById(elementId);
-  input.select();
-  input.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(input.value);
-
-  const originalText = btn.innerText;
-  btn.innerText = 'Skopiowano!';
-  btn.classList.add('copied');
-
-  setTimeout(() => {
-    btn.innerText = originalText;
-    btn.classList.remove('copied');
-  }, 2000);
-}
-</script>
 
     <footer>
         <div class="footer-container">
@@ -176,10 +119,11 @@ function copyToClipboard(elementId, btn) {
                 <p>Projekt realizowany przez <strong>Fundację Razem dla Wolności</strong>.</p>
             </div>
             <div>
-                <p>&copy; 2026 GeneBaza.pl  Wszelkie prawa zastrzeżone.</p>
+                <p>&copy; 2026 GeneBaza.pl &nbsp;Wszelkie prawa zastrzeżone.</p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
