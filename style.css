@@ -144,6 +144,13 @@ main.content {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.link-card-por {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    background-color: #faf8f5;
+}
+
 .link-card:hover {
     border-color: var(--accent);
     box-shadow: 0 4px 12px rgba(0,0,0,0.04);
@@ -328,6 +335,16 @@ button:focus-visible {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     margin-bottom: 24px;
     transition: box-shadow 0.2s ease;
+    max-width: 800px;
+}
+
+.por-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
     max-width: 800px;
 }
 
