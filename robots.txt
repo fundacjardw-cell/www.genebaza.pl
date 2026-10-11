@@ -1,0 +1,4 @@
+Plaintext
+User-agent: *
+Allow: /
+Sitemap: https://genebaza.pl/sitemap.xml
